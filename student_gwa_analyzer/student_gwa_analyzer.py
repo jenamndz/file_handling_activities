@@ -14,3 +14,13 @@ try:
                 if gwa > highest_gwa:
                     highest_gwa = gwa
                     top_student = name
+
+    if top_student:
+        print(f"The student with the highest GWA is {top_student} with a GWA of {highest_gwa}")
+    else:
+        print("The file was empty.")
+
+except FileNotFoundError:
+    print("Error: 'students.txt' not found. Please create the file first.")
+except ValueError:
+    print("Error: Ensure the GWA is a valid number and formatted correctly.")
