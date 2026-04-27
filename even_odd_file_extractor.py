@@ -12,3 +12,8 @@ try:
                 even_file.write(str(number) + "\n")
             else:
                 odd_file.write(str(number) + "\n")
+
+    print("Success! Check even.txt and odd.txt in your folder.")
+
+except FileNotFoundError:
+    print("Error: Ensure 'numbers.txt' is in the same folder as your script.")
