@@ -13,4 +13,4 @@ def write_to_mylife():
 
     print("Data saved to mylife.txt successfully.")
 
-    write_to_mylife()
+write_to_mylife()
