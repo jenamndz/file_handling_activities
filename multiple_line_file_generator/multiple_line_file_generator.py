@@ -10,3 +10,7 @@ def write_to_mylife():
 
             if choice == 'n':
                 break
+
+    print("Data saved to mylife.txt successfully.")
+
+    write_to_mylife()
