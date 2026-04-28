@@ -5,3 +5,8 @@ def write_to_mylife():
             line = input("Enter line: ")
 
             myFile.write(line + "\n")
+
+            choice = input("Are there more lines y/n? ").lower()
+
+            if choice == 'n':
+                break
