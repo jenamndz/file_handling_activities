@@ -7,3 +7,10 @@ def process_integers():
                     num_str = line.strip()
                     if num_str:
                         number = int(num_str)
+
+                        if number % 2 == 0:
+                            result = number ** 2
+                            double_file.write(str(result) + "\n")
+                        else:
+                            result = number ** 3
+                            triple_file.write(str(result) + "\n")
