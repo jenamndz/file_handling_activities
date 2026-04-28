@@ -14,3 +14,13 @@ def process_integers():
                         else:
                             result = number ** 3
                             triple_file.write(str(result) + "\n")
+
+        print("Operation complete. Check 'double.txt' and 'triple.txt'.")
+
+    # Error handling if the source file is missing
+    except FileNotFoundError:
+        print("Error: 'integers.txt' was not found.")
+
+
+# Call the method
+process_integers()
