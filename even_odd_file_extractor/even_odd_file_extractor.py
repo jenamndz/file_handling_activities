@@ -5,13 +5,13 @@ try:
             for line in input_file:
                 num_str = line.strip()
 
-            if num_str:
-                number = int(num_str)
+                if num_str:
+                    number = int(num_str)
 
-            if number % 2 == 0:
-                even_file.write(str(number) + "\n")
-            else:
-                odd_file.write(str(number) + "\n")
+                    if number % 2 == 0:
+                        even_file.write(str(number) + "\n")
+                    else:
+                        odd_file.write(str(number) + "\n")
 
     print("Success! Check even.txt and odd.txt in your folder.")
 
