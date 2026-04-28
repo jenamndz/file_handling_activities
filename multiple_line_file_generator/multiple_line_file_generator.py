@@ -3,3 +3,5 @@ def write_to_mylife():
 
         while True:
             line = input("Enter line: ")
+
+            myFile.write(line + "\n")
